@@ -4,3 +4,4 @@
 
 - 31: Authenticator Project
 - 37: Area Code Dictionary
+- 44: Final Ruby project: Classes, Modules, Mixins 1 - bcrypt
