@@ -8,3 +8,4 @@
 - 46: Final Ruby project: Classes, Modules, Mixins 2 - methods
 - 48: Final Ruby project: Classes, Modules, Mixins 3 - modules
 - 50: 'self' notation for method names
+- 51: Final Ruby project: Classes, Modules, Mixins 4 - include
