@@ -1,13 +1,24 @@
 require 'bcrypt'
  
-my_password = BCrypt::Password.create("my password")
-  #=> "$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa"
+users = [
+  { username: 'cindy', password: 'password1' },
+  { username: 'mya', password: 'password2' },
+  { username: 'tony', password: 'password3' }
+]
  
-puts my_password.version              #=> "2a"
-puts my_password.cost                 #=> 10
-puts my_password == "my password"     #=> true
-puts my_password == "not my password" #=> false
+def create_hash_digest(password)
+  BCrypt::Password.create(password)
+end
  
-# my_password = BCrypt::Password.new("$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa")
-# my_password == "my password"     #=> true
-# my_password == "not my password" #=> false
+def verify_hash_digest(password)
+  BCrypt::Password.new(password)
+end
+ 
+def create_secure_users(list_of_users)
+  list_of_users.each do |user_record|
+    user_record[:password] = create_hash_digest(user_record[:password])
+  end
+  list_of_users
+end
+
+puts create_secure_users(users)
