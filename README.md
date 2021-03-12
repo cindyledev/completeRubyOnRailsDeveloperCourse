@@ -13,3 +13,4 @@
 ## Section 3: Introduction to Ruby on Rails
 
 - 58: Root route, controller, more MVC and say "Hello World!"
+- 68: Add About page
