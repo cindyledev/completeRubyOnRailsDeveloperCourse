@@ -1,15 +1,30 @@
 require 'json'
 file = File.read('./users.json')
-data_hash = JSON.parse(file)
+data = JSON.parse(file)
 
 # array of users to store username and password
-# users = [
-#   { username: 'cindy', password: 'password1' },
-#   { username: 'mya', password: 'password2' },
-#   { username: 'tony', password: 'password3' }
-# ]
+users_array = [
+  { username: 'cindy', password: 'password1' },
+  { username: 'mya', password: 'password2' },
+  { username: 'tony', password: 'password3' }
+]
 
-puts data_hash["users"]
+class User
+  attr_accessor :username, :password
+  
+  def initialize(username, password)
+    @username = username
+    @password = password
+  end 
+  
+  def to_s
+    "Username: #{@username}, Password: #{@password}"
+  end
+end
+
+users = data["users"].map { |rd| User.new(rd['username'], rd['password']) }
+puts users
+puts users_array
 
 # Authentication method to check and verify if username/password combination exists
 def auth_user(username, password, list_of_users)
