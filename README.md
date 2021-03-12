@@ -9,3 +9,7 @@
 - 48: Final Ruby project: Classes, Modules, Mixins 3 - modules
 - 50: 'self' notation for method names
 - 51: Final Ruby project: Classes, Modules, Mixins 4 - include
+
+## Section 3: Introduction to Ruby on Rails
+
+- 58: Root route, controller, more MVC and say "Hello World!"
