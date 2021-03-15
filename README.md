@@ -14,3 +14,4 @@
 
 - 58: Root route, controller, more MVC and say "Hello World!"
 - 68: Add About page
+- 73: The back-end: CRUD and scaffold generation
