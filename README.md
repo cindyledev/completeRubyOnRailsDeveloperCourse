@@ -19,3 +19,4 @@
 ## Section 4: CRUD Operations in Ruby on Rails
 
 - 76: Tables, migrations and naming conventions
+- 78: Models and rails console
