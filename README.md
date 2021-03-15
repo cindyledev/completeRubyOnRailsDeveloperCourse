@@ -20,3 +20,4 @@
 
 - 76: Tables, migrations and naming conventions
 - 78: Models and rails console
+- 82: Validations
