@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_15_142410) do
+ActiveRecord::Schema.define(version: 2021_03_15_170941) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 2021_03_15_142410) do
   end
 
   create_table "chapters", force: :cascade do |t|
-    t.decimal "chapter_num"
+    t.integer "chapter_num"
     t.string "title"
-    t.decimal "page_start_at"
+    t.integer "page_start_at"
   end
 
 end
