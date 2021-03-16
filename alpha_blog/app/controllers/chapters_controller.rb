@@ -12,6 +12,8 @@ class ChaptersController < ApplicationController
   end
   
   def create
-    render plain: params[:chapter]
+    @chapter = Chapter.new(params.require(:chapter).permit(:chapter_num, :title, :page_start_at))
+    @chapter.save
+    redirect_to @chapter
   end
 end
