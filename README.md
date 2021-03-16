@@ -29,3 +29,4 @@
 - 94: Edit and update: update existing chapters
 - 96: Delete chapters
 - 98: User Interface - add layout links
+- 100: DRY (Don't Repeat Yourself) code refactoring and partials

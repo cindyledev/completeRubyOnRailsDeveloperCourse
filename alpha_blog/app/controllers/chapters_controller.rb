@@ -1,10 +1,11 @@
 class ChaptersController < ApplicationController
+  before_action :set_chapter, only: [:show, :edit, :update, :destroy]
+  
   def index
     @chapters = Chapter.all
   end
   
   def show
-    @chapter = Chapter.find(params[:id])
   end
   
   def new
@@ -12,11 +13,10 @@ class ChaptersController < ApplicationController
   end
   
   def edit
-    @chapter = Chapter.find(params[:id])
   end
   
   def create
-    @chapter = Chapter.new(params.require(:chapter).permit(:chapter_num, :title, :page_start_at))
+    @chapter = Chapter.new(chapter_params)
     if @chapter.save
       flash[:notice] = 'Chapter was created successfully.'
       redirect_to @chapter
@@ -26,8 +26,7 @@ class ChaptersController < ApplicationController
   end
   
   def update
-    @chapter = Chapter.find(params[:id])
-    if @chapter.update(params.require(:chapter).permit(:chapter_num, :title, :page_start_at))
+    if @chapter.update(chapter_params)
       flash[:notice] = 'Chapter was updated successfully.'
       redirect_to @chapter
     else
@@ -36,8 +35,16 @@ class ChaptersController < ApplicationController
   end
   
   def destroy
-    @chapter = Chapter.find(params[:id])
     @chapter.destroy
     redirect_to chapters_path
   end
+  
+  private
+    def set_chapter
+      @chapter = Chapter.find(params[:id])
+    end
+    
+    def chapter_params
+      params.require(:chapter).permit(:chapter_num, :title, :page_start_at)
+    end
 end
