@@ -30,3 +30,7 @@
 - 96: Delete chapters
 - 98: User Interface - add layout links
 - 100: DRY (Don't Repeat Yourself) code refactoring and partials
+
+## Section 5: Styling for your Rails Application
+
+- 106: Install Bootstrap, asset pipeline, JavaScript, webpack
