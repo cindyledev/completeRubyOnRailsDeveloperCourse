@@ -1,5 +1,14 @@
 <h1>Create a new chapter</h1>
 
+<% if @chapter.errors.any? %>
+  <h2>The following errors prevented the chapter from being saved</h2>
+  <ul>
+    <% @chapter.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
 <%= form_with scope: :chapter, url: chapters_path, local: true do |f| %>
   <p>
     <%= f.text_field :chapter_num, placeholder: 'Num' %>

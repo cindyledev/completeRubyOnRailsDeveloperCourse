@@ -8,12 +8,16 @@ class ChaptersController < ApplicationController
   end
   
   def new
-    
+    @chapter = Chapter.new
   end
   
   def create
     @chapter = Chapter.new(params.require(:chapter).permit(:chapter_num, :title, :page_start_at))
-    @chapter.save
-    redirect_to @chapter
+    if @chapter.save
+      flash[:notice] = 'Chapter was created successfully.'
+      redirect_to @chapter
+    else
+      render 'new'
+    end
   end
 end
