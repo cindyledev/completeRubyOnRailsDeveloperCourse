@@ -12,3 +12,7 @@
   <strong>Starts at:</strong>
   <%= @chapter.page_start_at %>
 </p>
+
+<%= link_to 'Edit', edit_chapter_path(@chapter) %> |
+<%= link_to 'Delete', chapter_path(@chapter), method: :delete, data: { confirm: "Are you sure?" } %> |
+<%= link_to 'Return to chapters listing', chapters_path %>

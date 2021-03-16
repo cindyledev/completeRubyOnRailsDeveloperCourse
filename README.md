@@ -28,3 +28,4 @@
 - 92: Messaging - validation and flash messages
 - 94: Edit and update: update existing chapters
 - 96: Delete chapters
+- 98: User Interface - add layout links
