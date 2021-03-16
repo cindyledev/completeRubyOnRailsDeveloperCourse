@@ -26,3 +26,4 @@
 - 88: Forms - build a new chapter creation form
 - 90: Create action - save newly created chapters
 - 92: Messaging - validation and flash messages
+- 94: Edit and update: update existing chapters
