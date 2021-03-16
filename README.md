@@ -22,3 +22,4 @@
 - 78: Models and rails console
 - 82: Validations
 - 84: Show chapters (route, action and view)
+- 86: Chapters index

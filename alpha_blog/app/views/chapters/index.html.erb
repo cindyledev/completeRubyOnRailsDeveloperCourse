@@ -1,0 +1,23 @@
+<h1>Chapters listing page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Chapter Number</th>
+      <th>Title</th>
+      <th>Starts At</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <% @chapters.each do |chapter| %>
+      <tr>
+        <td><%= chapter.chapter_num %></td>
+        <td><%= chapter.title %></td>
+        <td><%= chapter.page_start_at %></td>
+        <td>Placeholder</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
