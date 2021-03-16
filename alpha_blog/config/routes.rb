@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :articles
-  resources :chapters, only: [:show, :index, :new, :create, :edit, :update]
+  resources :chapters
   root 'pages#home'
   get 'about', to: 'pages#about'
 end

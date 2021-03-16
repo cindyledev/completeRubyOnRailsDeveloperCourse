@@ -34,4 +34,10 @@ class ChaptersController < ApplicationController
       render 'edit'
     end
   end
+  
+  def destroy
+    @chapter = Chapter.find(params[:id])
+    @chapter.destroy
+    redirect_to chapters_path
+  end
 end
