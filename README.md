@@ -34,3 +34,4 @@
 ## Section 5: Styling for your Rails Application
 
 - 106: Install Bootstrap, asset pipeline, JavaScript, webpack
+- 110: Build homepage
