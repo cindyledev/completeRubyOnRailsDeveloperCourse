@@ -38,3 +38,4 @@
 - 112: Layout links using Bootstrap classes
 - 114: Styling chapters index page
 - 116: Style form partial
+- 118: Style validation and flash messages
