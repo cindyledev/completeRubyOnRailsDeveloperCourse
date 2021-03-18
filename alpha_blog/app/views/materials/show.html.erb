@@ -1,0 +1,12 @@
+<%= @material.material_id %>
+<%= @material.slides_filename %>
+
+<%= @material.chapters.first.chapter_num %>
+<%= @material.chapters.first.title %>
+<%= @material.chapters.first.page_start_at %>
+
+<%= @material.chapters.select(:chapter_num).to_a %>
+<%= @material.chapters.select(:title).to_a %>
+<%= @material.chapters.select(:page_start_at).to_a %>
+
+<%= @material.chapters.size %>
