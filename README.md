@@ -47,3 +47,4 @@
 - 126: Create materials
 - 128: Add material validation
 - 130: One to many association
+- 132: Show Material info in chapters

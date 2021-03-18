@@ -6,9 +6,10 @@
       <div class="col-8 mt-4">
         <div class="card text-center shadow mb-5 bg-white rounded">
           <div class="card-header font-italic">
-            Chapter <%= chapter.chapter_num %>
+            Material <%= chapter.material.slides_filename if chapter.material %>
           </div>
           <div class="card-body">
+            <p class="card-text">Chapter <%= chapter.chapter_num %></p>
             <h5 class="card-title"><%= link_to chapter.title, chapter_path(chapter), class: "text-success" %></h5>
             <p class="card-text">Slide <%= chapter.page_start_at %></p>
             <%= link_to 'View', chapter_path(chapter), class: "btn btn-outline-success" %>
