@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_18_031002) do
+ActiveRecord::Schema.define(version: 2021_03_18_143133) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -25,6 +25,13 @@ ActiveRecord::Schema.define(version: 2021_03_18_031002) do
     t.integer "page_start_at"
     t.datetime "created_at", precision: 6
     t.datetime "updated_at", precision: 6
+  end
+
+  create_table "materials", force: :cascade do |t|
+    t.string "material_id"
+    t.string "slides_filename"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
