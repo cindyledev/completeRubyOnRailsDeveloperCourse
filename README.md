@@ -40,3 +40,4 @@
 - 116: Style form partial
 - 118: Style validation and flash messages
 - 120: Style show view
+- 122: Cleanup layout
