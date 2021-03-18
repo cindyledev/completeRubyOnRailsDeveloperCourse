@@ -17,6 +17,7 @@ class ChaptersController < ApplicationController
   
   def create
     @chapter = Chapter.new(chapter_params)
+    @chapter.material = Material.first
     if @chapter.save
       flash[:notice] = 'Chapter was created successfully.'
       redirect_to @chapter
