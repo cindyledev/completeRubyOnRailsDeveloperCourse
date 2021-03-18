@@ -37,3 +37,4 @@
 - 110: Build homepage
 - 112: Layout links using Bootstrap classes
 - 114: Styling chapters index page
+- 116: Style form partial
