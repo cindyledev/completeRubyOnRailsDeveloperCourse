@@ -44,4 +44,5 @@
 
 ## Section 6: Associations and Authentication Systems
 
-- 126: Create users
+- 126: Create materials
+- 128: Add material validation
