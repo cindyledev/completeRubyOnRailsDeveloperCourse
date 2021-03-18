@@ -1,4 +1,4 @@
-<h1>Showing chapter details</h1>
+<h1><%= @chapter.title %></h1>
 
 <p>
   <strong>Chapter Number:</strong>
@@ -13,6 +13,5 @@
   <%= @chapter.page_start_at %>
 </p>
 
-<%= link_to 'Edit', edit_chapter_path(@chapter) %> |
-<%= link_to 'Delete', chapter_path(@chapter), method: :delete, data: { confirm: "Are you sure?" } %> |
-<%= link_to 'Return to chapters listing', chapters_path %>
+<%= link_to 'Edit', edit_chapter_path(@chapter), class: "btn btn-outline-info" %>
+<%= link_to 'Delete', chapter_path(@chapter), class: "btn btn-outline-danger", method: :delete, data: { confirm: "Are you sure?" } %>

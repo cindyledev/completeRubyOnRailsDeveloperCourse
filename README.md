@@ -39,3 +39,4 @@
 - 114: Styling chapters index page
 - 116: Style form partial
 - 118: Style validation and flash messages
+- 120: Style show view
