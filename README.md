@@ -35,3 +35,4 @@
 
 - 106: Install Bootstrap, asset pipeline, JavaScript, webpack
 - 110: Build homepage
+- 112: Layout links using Bootstrap classes
