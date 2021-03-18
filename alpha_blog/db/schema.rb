@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_15_170941) do
+ActiveRecord::Schema.define(version: 2021_03_18_031002) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 2021_03_15_170941) do
     t.integer "chapter_num"
     t.string "title"
     t.integer "page_start_at"
+    t.datetime "created_at", precision: 6
+    t.datetime "updated_at", precision: 6
   end
 
 end
